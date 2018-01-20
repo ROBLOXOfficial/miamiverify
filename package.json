@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "bufferutil": "^3.0.1",
+    "discord.js": "git+https://github.com/hydrabolt/discord.js.git#352bd13e6f590e12d5e2e3be0cf836e929cef74b",
+    "discord.js-commando": "git+https://github.com/Gawdl3y/discord.js-commando.git#bade5966ef8e5e5a81c60850c66afb158a4881dc",
+    "erlpack": "github:hammerandchisel/erlpack",
+    "express": "^4.15.2",
+    "mz": "^2.6.0",
+    "request": "^2.81.0",
+    "request-debug": "^0.2.0",
+    "request-promise": "^4.2.0",
+    "standard": "^10.0.3"
+  },
+  "name": "rover",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evaera/RoVer.git"
+	
+  },
+  "author": "evaera",
+  "license": "Apache-2.0",
+  "description": "<p align=\"center\">\r     <a href=\"https://eryn.io/RoVer/\"><img src=\"http://i.imgur.com/j1jxb5F.png\" alt=\"RoVer\" /></a>\r </p>",
+  "discord.js": "^11.2.1",
+  "bugs": {
+    "url": "https://github.com/evaera/RoVer/issues"
+  },
+  "homepage": "https://github.com/evaera/RoVer#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+	
+  }
+}
