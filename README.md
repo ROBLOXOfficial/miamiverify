@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://ultraaviation.github.io/Miami/"><img src="https://media.discordapp.net/attachments/401847580943712267/404187802398490624/miami.png" alt="Miami Verification" /></a>
+    <a href="https://ultraaviation.github.io/Miami/"><img src="https://media.discordapp.net/attachments/401847580943712267/404188755067535370/hotel.jpg?width=1393&height=677" /></a>
 </p>
 
 <p align="center">
