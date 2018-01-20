@@ -1,26 +1,24 @@
 <p align="center">
-    <a href="https://eryn.io/RoVer/"><img src="http://i.imgur.com/j1jxb5F.png" alt="RoVer" /></a>
+    <a href="https://ultraaviation.github.io/Miami/"><img src="https://media.discordapp.net/attachments/401847580943712267/404187802398490624/miami.png" alt="Miami Verification" /></a>
 </p>
 
 <p align="center">
-    <a href="https://discordapp.com/oauth2/authorize?client_id=298796807323123712&scope=bot&permissions=402656264"><img src="http://i.imgur.com/8UBldnL.png" alt="Add" /></a>
+    <a href="https://discordapp.com/oauth2/authorize?client_id=402013118546313226&scope=bot&permissions=402656264"><img src="https://media.discordapp.net/attachments/401847580943712267/404187802398490624/miami.png" alt="Miami Verification" alt="Add" /></a>
 </p>
 
-[![Patreon](http://i.imgur.com/dujYlAK.png)](https://www.patreon.com/erynlynn) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Verified Users](https://img.shields.io/badge/verified%20users-130K%2B-brightgreen.svg)](https://eryn.io/RoVer)
-[![Discord](https://img.shields.io/discord/321647685629378561.svg)](https://discord.gg/UgrYcCS)
 
 # What is it?
 
-RoVer is an open source, drop-in verification bot that will allow your members to safely authenticate their Roblox account on your Discord server. This empowers your Roblox community with the following advantages:
+Miami Verfication is an open source, drop-in verification bot that will allow your members to safely authenticate their Roblox account on your Discord server. This empowers your Roblox community with the following advantages:
 
 - Speak with confidence, because everyone is who their name says they are.
 - Adding an extra step between trolls & spammers and your server will reduce unwanted activity drastically.
 - The verification database is already populated with thousands of Discord-Roblox account links, so it's possible users will already be verified when they join your server.
-- The hosted version of RoVer does not have any API rate limiting and will automatically be able to update roles the second the user verifies. (If you host RoVer yourself, the user will have to run a command in order for the verification to take place.)
+- The hosted version of Miami Verfication does not have any API rate limiting and will automatically be able to update roles the second the user verifies. 
 
 # How does it work?
 
-RoVer uses the same verification system used by the [Roblox Community Discord](http://rbx.community) server, a web app that lives at [verify.eryn.io](https://verify.eryn.io). RoVer makes use of its [public API](https://verify.eryn.io/api).
+Miami Verfication uses the same verification system used by the [Roblox Community Discord](http://rbx.community) server, a web app that lives at [verify.eryn.io](https://verify.eryn.io). Miami Verfication makes use of its [public API](https://verify.eryn.io/api).
 
 ## Step 1
 
@@ -46,7 +44,7 @@ The user is verified and can participate in your community.
     <img src="http://i.imgur.com/D0gnqf1.png" alt="Step 1" />
 </p>
 
-# Getting Started with RoVer
+# Getting Started with Miami Verification
 
 The quickest and easiest way to use RoVer is to [add the hosted version](https://discordapp.com/oauth2/authorize?client_id=298796807323123712&scope=bot&permissions=402656264) to your server.
 
@@ -138,39 +136,3 @@ To create a role for all members who are either in the DevForum, have OBC, or is
 
 `!BindRank DevForumOrOBC DevForum OBC 372372:255`
 
-# Self-hosting instructions
-
-1. To get RoVer ready to run locally, the first step is to clone this repository onto the machine you wish to run it on.
-2. **Node.js version 8.9.4 LTS or newer is recommended to run RoVer.**
-3. [Install yarn](https://yarnpkg.com/lang/en/docs/install/) if you don't already have it
-4. Use yarn to install the dependencies from the project folder: `yarn install`
-5. Edit the file `src/data/client.json` and insert your [bot token](https://discordapp.com/developers/applications/me).
-6. Start the bot from the project folder: `node ./src/index.js`
-7. You should set up a process manager like [PM2](http://pm2.keymetrics.io/) or forever.js to ensure that the bot remains online.
-
-### Update Server
-
-The *Update Server* is an optional part of RoVer that can be enabled in `client.json`. It is an HTTP server that can listen for requests and globally update a member in all guilds that the bot is in, similar to if they ran `!verify` in every guild. This is used internally on the hosted version for when the user verifies on verify.eryn.io, but you could use it for whatever purpose you wish.
-
-### client.json options
-
-```
-    "token"             : String. The bot token that is used to log in to your bot.
-    "lockNicknames"     : Boolean. Default false. If true, the bot will run DiscordServer.verifyMember every time
-                          they begin typing. This will quickly eat up API requests if you aren't careful. Mostly
-                          used on the hosted version.
-    "updateServer"      : {
-                          If this object is present, the update server will be started.
-
-        "port"          : Integer. The port the Update server runs on.
-        "apiKey"        : String. The API key the server checks against before updating the user.
-    }
-    "loud"              : Boolean. Default false. Logs every request made to stdout.
-    "totalShards"       : Integer. Default auto. The number of shards to launch.
-    "apiRequestMethod"  : String. Default 'sequential'. sequential' or 'burst'. Sequential executes all requests in the order
-                          they are triggered, whereas burst runs multiple at a time, and doesn't guarantee a particular order.
-    "owner"             : String. Default "0". The Discord ID of the bot's owner.
-    "commandPrefix"     : String. Default "!". The prefix for commands.
-    "shardLifeTime"     : Integer. Number of seconds each shard will run before closing.
-    "mainLifeTime"      : Integer. Number of seconds the main process will run before closing. (Need a process manager if you want it to relaunch)
-```
