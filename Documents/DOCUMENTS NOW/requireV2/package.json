@@ -1,0 +1,14 @@
+{
+  "name": "requirev2",
+  "version": "0.1.0",
+  "description": "Roblox Recently removed require() so we made RequireV2 where you can secure your code again!",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
